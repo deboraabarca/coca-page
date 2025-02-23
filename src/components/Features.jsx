@@ -1,4 +1,4 @@
-// src/components/Features/Features.jsx
+
 import '../styles/Features.css';
 
 const Features = () => {
