@@ -1,3 +1,4 @@
+import '../styles/Hero.css';
     const Hero = () => {
     const platforms = [
         { name: 'Slack', icon: '/icons/slack.svg' },
