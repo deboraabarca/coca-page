@@ -1,0 +1,18 @@
+.navbar{
+    padding:var(--spaacing-md) 0;
+    background-color: var(--primary-color);
+}
+
+.navbar__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__logo-img{
+    height: 32px;
+}
+
+.navbar__cta{
+    font-size: var(--text-base);
+}
