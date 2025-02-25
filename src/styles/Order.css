@@ -1,0 +1,63 @@
+/* components/OrdersSection.css */
+.orders-section {
+    padding: 80px 0;
+    background-color: var(--primary-color);
+    color: var(--white);
+  }
+  
+  .orders-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+  }
+  
+  .orders-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .orders-text p {
+    opacity: 0.9;
+    margin-bottom: 30px;
+  }
+  
+  .stats {
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+  }
+  
+  .stat-item h3 {
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+  }
+  
+  .stat-item p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+  
+  .orders-image img {
+    max-width: 100%;
+    border-radius: 12px;
+  }
+  
+  @media (max-width: 768px) {
+    .orders-content {
+      grid-template-columns: 1fr;
+    }
+    
+    .orders-text {
+      text-align: center;
+    }
+    
+    .stats {
+      justify-content: center;
+    }
+    
+    .orders-image {
+      margin-top: 30px;
+      text-align: center;
+    }
+  }

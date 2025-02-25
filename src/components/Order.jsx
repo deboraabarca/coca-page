@@ -1,4 +1,5 @@
 // components/OrdersSection.js
+import '../styles/Order.css';
 import ordersImage from '../assets/order-interface.png'; 
 
 const OrdersSection = () => {
