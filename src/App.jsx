@@ -1,5 +1,5 @@
 
-import Features from './components/Features';
+import Integration from './components/Integration';
 import Hero from './components/Hero';
 import Header from './components/Header';
 
@@ -13,7 +13,7 @@ function App() {
     <div>
     <Header/>
     <Hero />
-    <Features />
+    <Integration/>
 </div>
 
 

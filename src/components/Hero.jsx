@@ -1,6 +1,6 @@
 // components/HeroSection.js
-import './HeroSection.css';
-import heroImage from '../assets/chat-illustration.png'; // Add this image to your assets
+import '../styles/Hero.css';
+ // Add this image to your assets
 
 const HeroSection = () => {
   return (
@@ -26,7 +26,6 @@ const HeroSection = () => {
               <span className="chat-icon yellow"></span>
               <span className="chat-icon purple"></span>
             </div>
-            <img src={heroImage} alt="Chat interface" />
           </div>
         </div>
         

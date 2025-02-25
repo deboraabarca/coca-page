@@ -1,0 +1,39 @@
+/* components/IntegrationSection.css */
+.integration-section {
+  background-color: var(--white);
+  padding: 60px 0;
+}
+
+.integration-section h2 {
+  margin-bottom: 40px;
+  color: var(--text-color);
+}
+
+.integration-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.logo-placeholder {
+  width: 80px;
+  height: 40px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .integration-logos {
+    gap: 20px;
+  }
+  
+  .logo-placeholder {
+    width: 60px;
+    height: 30px;
+  }
+}
