@@ -1,18 +1,57 @@
-.navbar{
-    padding:var(--spaacing-md) 0;
+/* components/Header.css */
+.header {
     background-color: var(--primary-color);
-}
-
-.navbar__container{
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .header-content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-}
-
-.navbar__logo-img{
-    height: 32px;
-}
-
-.navbar__cta{
-    font-size: var(--text-base);
-}
+    justify-content: space-between;
+  }
+  
+  .logo img {
+    height: 30px;
+  }
+  
+  .main-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+  }
+  
+  .main-nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.3s;
+  }
+  
+  .main-nav a:hover {
+    opacity: 0.8;
+  }
+  
+  .header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .login-btn {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .register-btn {
+    font-weight: 500;
+  }
+  
+  @media (max-width: 768px) {
+    .main-nav {
+      display: none;
+    }
+  }
