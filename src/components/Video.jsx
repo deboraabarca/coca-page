@@ -1,4 +1,5 @@
 // components/VideoSection.js
+import '../styles/Video.css';
 import videoImage from '../assets/video-section.png'; // Add this image to your assets
 
 const VideoSection = () => {
@@ -14,18 +15,8 @@ const VideoSection = () => {
           <div className="video-container">
             <div className="video-placeholder">
               <img src={videoImage} alt="Video chat" />
-              <button className="play-button">
-                <span className="play-icon">▶</span>
-              </button>
             </div>
             <div className="chat-message">
-              <div className="message-avatar">
-                <img src="/assets/avatar.jpg" alt="Avatar" />
-              </div>
-              <div className="message-content">
-                <p className="message-name">Martha Stanley</p>
-                <p className="message-text">Hi John, Thank you for reaching out about our service today.</p>
-              </div>
             </div>
           </div>
         </div>
