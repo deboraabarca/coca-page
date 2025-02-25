@@ -2,6 +2,7 @@
 import Integration from './components/Integration';
 import Hero from './components/Hero';
 import Header from './components/Header';
+import Multichannel from './components/Multichannel';
 
 // import { useState } from 'react'
 
@@ -14,6 +15,7 @@ function App() {
     <Header/>
     <Hero />
     <Integration/>
+    <Multichannel/>
 </div>
 
 

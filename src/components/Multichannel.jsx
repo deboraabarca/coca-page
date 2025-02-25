@@ -1,5 +1,5 @@
 // components/MultiChannelSection.js
-import './MultiChannelSection.css';
+import '../styles/Multichannel.css';
 import chatUIImage from '../assets/multi-channel component.png'; // Add this image to your assets
 
 const MultiChannelSection = () => {
