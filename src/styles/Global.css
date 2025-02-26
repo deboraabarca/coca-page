@@ -107,7 +107,9 @@ section {
 .justify-between {
   justify-content: space-between;
 }
-
+.icon{
+  max-width: 7%;
+}
 img {
   max-width: 100%;
 }

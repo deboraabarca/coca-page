@@ -1,6 +1,7 @@
 // components/HeroSection.js
 import '../styles/Hero.css';
- // Add this image to your assets
+import phone from '../assets/icons/phone.png';
+import mouse from '../assets/icons/mouse.png';
 
 const HeroSection = () => {
   return (
@@ -31,12 +32,12 @@ const HeroSection = () => {
         
         <div className="contact-info">
           <div className="phone">
-            <span className="icon">📞</span>
+          <img src={phone} alt="Phone Icon" className="icon" />
             <span>+00 (000) 123-45-67</span>
           </div>
           <div className="hours">
-            <span className="icon">🕒</span>
-            <span>WORKING HOURS</span>
+          <img src={mouse} alt="mouse" className="icon" />
+            <span>SCROOL DOWN</span>
           </div>
         </div>
       </div>

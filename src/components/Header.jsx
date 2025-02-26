@@ -1,5 +1,5 @@
 import '../styles/Header.css';
-import logo from '../assets/logo-seccion-Header.png'; 
+import logo from '../assets/resources/logo-seccion-Header.png'; 
 
 const Header = () => {
   return (
