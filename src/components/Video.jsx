@@ -1,6 +1,6 @@
 // components/VideoSection.js
 import '../styles/Video.css';
-import videoImage from '../assets/video-section.png'; // Add this image to your assets
+import videoImage from '../assets/resources/video-section.png'; // Add this image to your assets
 
 const VideoSection = () => {
   return (

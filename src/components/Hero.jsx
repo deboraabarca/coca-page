@@ -14,7 +14,7 @@ const HeroSection = () => {
             <p>Give a software that allows you to chat with your customers directly when needed, in real-time</p>
             
             <div className="hero-buttons">
-              <a href="#get-started" className="btn btn-secondary">Get Started</a>
+              <a href="#get-started" className="btn btn-started">Get Started</a>
               <a href="#learn-more" className="btn btn-outline">Learn More</a>
             </div>
           </div>
