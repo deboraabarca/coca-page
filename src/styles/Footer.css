@@ -1,0 +1,44 @@
+
+.footer-cta-section {
+    padding: 60px 0;
+    background-color: var(--white);
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .cta-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .cta-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta-content p {
+    color: var(--light-text);
+    margin-bottom: 30px;
+  }
+  
+  .app-download {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .app-button {
+    display: inline-block;
+    padding: 5px;
+  }
+  
+  .app-button img {
+    height: 40px;
+  }
+  
+  @media (max-width: 768px) {
+    .cta-content h2 {
+      font-size: 1.5rem;
+    }
+  }

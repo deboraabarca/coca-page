@@ -1,5 +1,5 @@
 // components/FooterCTA.js
-
+import '../styles/Footer.css';
 
 const FooterCTA = () => {
   return (
