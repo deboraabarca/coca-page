@@ -7,6 +7,7 @@ import Video from './components/Video';
 import Order from './components/Order';
 import Interface from './components/Interface';
 import Testimonials from './components/Testimonials';
+import Pricing from './components/Pricing';
 
 
 
@@ -23,6 +24,7 @@ function App() {
     <Order/>
     <Interface/>
     <Testimonials/>
+    <Pricing/>
 
 </>
 
