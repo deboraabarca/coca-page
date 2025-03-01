@@ -6,6 +6,7 @@ import Multichannel from './components/Multichannel';
 import Video from './components/Video';
 import Order from './components/Order';
 import Interface from './components/Interface';
+import Testimonials from './components/Testimonials';
 
 
 
@@ -21,6 +22,7 @@ function App() {
     <Video/>
     <Order/>
     <Interface/>
+    <Testimonials/>
 
 </>
 

@@ -1,6 +1,5 @@
-// components/TestimonialsSection.js
+// components/TestimonialsSection.j
 
-import './TestimonialsSection.css';
 
 const TestimonialsSection = () => {
   const testimonials = [
