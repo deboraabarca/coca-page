@@ -1,4 +1,5 @@
 // components/InterfaceSection.js 
+import '../styles/Interface.css';
 import interfaceImage from '../assets/resources/interface.png'; 
 
 const InterfaceSection = () => {
