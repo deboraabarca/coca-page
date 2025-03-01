@@ -8,6 +8,7 @@ import Order from './components/Order';
 import Interface from './components/Interface';
 import Testimonials from './components/Testimonials';
 import Pricing from './components/Pricing';
+import Footer from './components/Footer';
 
 
 
@@ -25,6 +26,7 @@ function App() {
     <Interface/>
     <Testimonials/>
     <Pricing/>
+    <Footer/>
 
 </>
 

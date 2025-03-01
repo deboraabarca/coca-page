@@ -1,5 +1,5 @@
 // components/PricingSection.js
-
+import '../styles/Pricing.css';
 const PricingSection = () => {
   return (
     <section className="pricing-section">
