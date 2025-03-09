@@ -1,26 +1,33 @@
-// components/FooterCTA.js
+// components/Footer.js
+
 import '../styles/Footer.css';
 
-const FooterCTA = () => {
+const Footer = () => {
   return (
-    <section className="footer-cta-section">
+    <footer className="footer">
       <div className="container">
-        <div className="cta-content">
-          <h2>Sign up for your free trial today and incorporate live chat on your website.</h2>
-          <p>Unlock the Power of Real-Time Customer Engagement! Plan Your Trial and Integrate Live Chat on Your Website Today!</p>
-          
-          <div className="app-download">
-            <a href="#app-store" className="app-button">
-              <img src="/assets/app-store.png" alt="App Store" />
-            </a>
-            <a href="#play-store" className="app-button">
-              <img src="/assets/play-store.png" alt="Play Store" />
-            </a>
+        <div className="footer-cta">
+          <h2>Are you prepared to collaborate with us?</h2>
+          <a href="#lets-chat" className="btn btn-secondary">Lets chat with us!</a>
+        </div>
+        
+        <div className="footer-info">
+          <div className="contact-details">
+            <p>1277 Rangkulum Jungle, Bandung, Indonesia</p>
+            <p>info@yourweb.com</p>
+          </div>
+        </div>
+        
+        <div className="footer-bottom">
+          <p>© 2024 by Buy From Services</p>
+          <div className="footer-links">
+            <a href="#terms">Terms & Conditions</a>
+            <a href="#privacy">Privacy Policy</a>
           </div>
         </div>
       </div>
-    </section>
+    </footer>
   );
 };
 
-export default FooterCTA;
+export default Footer;
