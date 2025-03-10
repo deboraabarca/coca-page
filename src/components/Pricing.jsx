@@ -1,11 +1,32 @@
 // components/PricingSection.js
+import { useState } from 'react';
 import '../styles/Pricing.css';
 import { FaGooglePlay, FaApple } from 'react-icons/fa';
 
 const PricingSection = () => {
+  const [billingCycle, setBillingCycle] = useState('monthly');
   return (
     <section className="pricing-section">
       <div className="container">
+      <h2 className="pricing-title">Pricing Plans</h2>
+        <p className="pricing-description">
+          Cool landing page UI Kit no credit card required. All plans come with a
+          free, 14 day trial of our Premium features.
+        </p>
+        <div className="billing-toggle">
+          <button 
+            className={`toggle-btn ${billingCycle === 'monthly' ? 'active' : ''}`} 
+            onClick={() => setBillingCycle('monthly')}
+          >
+            Monthly
+          </button>
+          <button 
+            className={`toggle-btn ${billingCycle === 'yearly' ? 'active' : ''}`}
+            onClick={() => setBillingCycle('yearly')}
+          >
+            Yearly
+          </button>
+        </div>
         <div className="pricing-plans">
           <div className="pricing-card silver">
             <h3 className="plan-title">SILVER</h3>
