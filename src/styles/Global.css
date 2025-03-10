@@ -39,7 +39,6 @@ body {
   text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease;
-  border: none;
 }
 
 .btn-primary {

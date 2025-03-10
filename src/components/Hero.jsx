@@ -2,7 +2,7 @@
 import '../styles/Hero.css';
 import phone from '../assets/icons/phone.png';
 import mouse from '../assets/icons/mouse.png';
-import { FaVideo, FaComment, FaHeadset, FaEnvelope } from 'react-icons/fa';
+import { FaVideo, FaPhone, FaEnvelope, FaLongArrowAltDown } from 'react-icons/fa';
 
 const HeroSection = () => {
   return (
@@ -19,12 +19,12 @@ const HeroSection = () => {
             
             <div className="note-wrapper">
               <div className="floating-note">All research<br />start from here</div>
-              <div className="arrow-down"></div>
+              <FaLongArrowAltDown className="arrow-icon" />
             </div>
             
             <div className="hero-buttons">
-              <a href="#get-started" className="btn btn-started">Chatting Now</a>
-              <a href="#learn-more" className="btn btn-outline">Learn More</a>
+              <a href="#get-started" className=" btn-started">Chatting Now</a>
+              <a href="#learn-more" className=" btn-learn">Chatting Now</a>
             </div>
           </div>
         </div>
@@ -36,14 +36,9 @@ const HeroSection = () => {
               <FaVideo className="icon-inside" />
             </span>
           </div>
-          <div className="chat-icon-wrapper yellow-icon">
-            <span className="chat-icon yellow">
-              <FaComment className="icon-inside" />
-            </span>
-          </div>
           <div className="chat-icon-wrapper purple-icon">
             <span className="chat-icon purple">
-              <FaHeadset className="icon-inside" />
+              <FaPhone className="icon-inside" />
             </span>
           </div>
           <div className="chat-icon-wrapper email-icon">
