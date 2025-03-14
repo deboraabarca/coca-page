@@ -17,7 +17,7 @@ const IntegrationSection = () => {
     <section className="integration-section">
       <div className="container">
         <h2 className="text-center">
-          Effortless integration with your preferred tools
+          Integración sin esfuerzo con tus herramientas preferidas
         </h2>
 
         <div className="integration-logos">

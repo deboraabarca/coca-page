@@ -1,34 +1,50 @@
 // components/HeroSection.js
-import '../styles/Hero.css';
-import phone from '../assets/icons/phone.png';
-import mouse from '../assets/icons/mouse.png';
-import { FaVideo, FaPhone, FaEnvelope, FaLongArrowAltDown } from 'react-icons/fa';
+import "../styles/Hero.css";
+import phone from "../assets/icons/phone.png";
+import mouse from "../assets/icons/mouse.png";
+import {
+  FaVideo,
+  FaPhone,
+  FaEnvelope,
+  FaLongArrowAltDown,
+} from "react-icons/fa";
 
 const HeroSection = () => {
   return (
     <section className="hero-section">
       <div className="container">
-        <div className="chat-software-badge">
-          Chat software
-        </div>
-        
+        <div className="chat-software-badge">Plataforma de chat</div>
+
         <div className="hero-content">
           <div className="hero-text">
-            <h1>Provide real-time support through chat for your customers</h1>
-            <p>Great software that allows you to chat from any place at any time without any interruption</p>
-            
+            <h1>
+              Brinda soporte en tiempo real a tus clientes a través del chat
+            </h1>
+            <p>
+              Un excelente software que te permite chatear desde cualquier lugar
+              y en cualquier momento sin interrupciones
+            </p>
+
             <div className="note-wrapper">
-              <div className="floating-note">All research<br />start from here</div>
+              <div className="floating-note">
+                Toda investigación
+                <br />
+                comienza aquí
+              </div>
               <FaLongArrowAltDown className="arrow-icon" />
             </div>
-            
+
             <div className="hero-buttons">
-              <a href="#get-started" className=" btn-started">Chatting Now</a>
-              <a href="#learn-more" className=" btn-learn">Chatting Now</a>
+              <a href="#get-started" className=" btn-started">
+                Chatear ahora
+              </a>
+              <a href="#learn-more" className=" btn-learn">
+                Leer más
+              </a>
             </div>
           </div>
         </div>
-        
+
         {/* Círculos de colores con íconos */}
         <div className="chat-icons-container">
           <div className="chat-icon-wrapper red-icon">
@@ -47,20 +63,19 @@ const HeroSection = () => {
             </span>
           </div>
         </div>
-        
+
         <div className="contact-info">
           <div className="phone">
-            <img src={phone} alt="Phone Icon" className="icon" />
+            <img src={phone} alt="Icono de teléfono" className="icon" />
             <span>+182 (283) 343-23-10</span>
           </div>
           <div className="hours">
             <img src={mouse} alt="mouse" className="icon" />
-            <span>SCROLL DOWN</span>
+            <span>DESPLAZA HACIA ABAJO</span>
           </div>
         </div>
       </div>
     </section>
   );
 };
-
 export default HeroSection;

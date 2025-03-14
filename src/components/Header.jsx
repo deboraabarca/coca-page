@@ -12,16 +12,16 @@ const Header = () => {
           
           <nav className="main-nav">
             <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About Us</a></li>
-              <li><a href="#team">Our Team</a></li>
-              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#home">Inicio</a></li>
+              <li><a href="#about">Sobre nosotros</a></li>
+              <li><a href="#team">Nuestro equipo</a></li>
+              <li><a href="#pricing">Precios</a></li>
             </ul>
           </nav>
           
           <div className="header-buttons">
-            <a href="#login" className="login-btn">Login</a>
-            <a href="#register" className="btn btn-secondary register-btn">Register</a>
+            <a href="#login" className="login-btn">Iniciar sesión</a>
+            <a href="#register" className="btn btn-secondary register-btn">Registrarse</a>
           </div>
         </div>
       </div>

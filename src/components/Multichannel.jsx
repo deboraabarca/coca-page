@@ -9,23 +9,22 @@ const MultiChannelSection = () => {
         <div className="multi-channel-content">
           <div className="multi-channel-text">
             <h2>
-              Access a unified multi-channel messaging solution in one place
+              Accede a una solución unificada de mensajería multicanal en un solo lugar
             </h2>
             <p>
-              Connect with your customers across multiple platforms through one
-              interface. Keep an eye on conversations across all your preferred
-              channels with ease.
+              Conéctate con tus clientes a través de múltiples plataformas desde una sola 
+              interfaz. Supervisa fácilmente las conversaciones en todos tus canales preferidos.
             </p>
 
             <ul className="feature-list">
               <li>
-                Engage in real-time chats with visitors, prospects, and
-                customers.
+                Interactúa en chats en tiempo real con visitantes, prospectos y clientes.
               </li>
-              <li>Save and personalize conversations without limitations.</li>
-              <li>Participate in contextual chat conversations on the go.</li>
+              <li>Guarda y personaliza conversaciones sin limitaciones.</li>
+              <li>Participa en conversaciones contextuales en cualquier momento y lugar.</li>
             </ul>
           </div>
+
 
           <div className="multi-channel-image">
             <img src={chatUIImage} alt="Multi-channel interface" />

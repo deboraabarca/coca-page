@@ -12,10 +12,11 @@ const InterfaceSection = () => {
           </div>
           
           <div className="interface-text">
-            <h2>An ideal interface for swift, code-free support</h2>
-            <p>Our intuitive platform allows you to provide the best customer experience instantly, with nothing but clean UI and instant support.</p>
-            <p>Communicate effectively with customers, integrate seamlessly with your website for efficient support, and provide a delightful experience for your users.</p>
-            <a href="#learn-more" className="btn btn-primary">Learn More</a>
+            <h2>Una interfaz ideal para un soporte rápido y sin código</h2>
+            <p>Nuestra plataforma intuitiva te permite ofrecer la mejor experiencia al cliente al instante, con una interfaz limpia y soporte inmediato.</p>
+            <p>Comunícate de manera efectiva con los clientes, intégrate sin problemas con tu sitio web para un soporte eficiente y brinda una experiencia agradable a tus usuarios.</p>
+
+            <a href="#learn-more" className="btn btn-primary">Leer más</a>
           </div>
         </div>
       </div>

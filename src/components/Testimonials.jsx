@@ -1,41 +1,46 @@
-import '../styles/Testimonials.css';
-import avatar1 from '../assets/avatars/avatar1.jpg';
-import avatar2 from '../assets/avatars/avatar2.jpg';
-import avatar3 from '../assets/avatars/avatar3.jpg';
+import "../styles/Testimonials.css";
+import avatar1 from "../assets/avatars/avatar1.jpg";
+import avatar2 from "../assets/avatars/avatar2.jpg";
+import avatar3 from "../assets/avatars/avatar3.jpg";
 
 const TestimonialsSection = () => {
   const testimonials = [
     {
       id: 1,
-      name: 'Jennifer Albert',
+      name: "Jennifer Albert",
       avatar: avatar1,
-      text: 'Using this tool to help a startup like mine made things more smooth and less time-consuming, and the interactive features are all user-friendly.',
-      rating: 5
+      text: "Usar esta herramienta para ayudar a una startup como la mía hizo que las cosas fueran más fluidas y menos consumidoras de tiempo, y todas las funciones interactivas son fáciles de usar.",
+      rating: 5,
     },
     {
       id: 2,
-      name: 'Jonathan Albert',
+      name: "Jonathan Albert",
       avatar: avatar2,
-      text: 'Amazing UI, sleek and elegant. The design is clean and welcoming with their support team. I feel they really cares about our business.',
-      rating: 5
+      text: "Interfaz increíble, elegante y refinada. El diseño es limpio y acogedor con su equipo de soporte. Siento que realmente se preocupan por nuestro negocio.",
+      rating: 5,
     },
     {
       id: 3,
-      name: 'Jonathan Albert',
+      name: "Jonathan Albert",
       avatar: avatar3,
-      text: 'Integration was super easy with Mixpanel. The combination of super-sleek technology keeps visitors very engaged.',
-      rating: 5
-    }
+      text: "La integración fue súper fácil con Mixpanel. La combinación de tecnología súper elegante mantiene a los visitantes muy comprometidos.",
+      rating: 5,
+    },
   ];
-  
+
   return (
     <section className="testimonials-section">
       <div className="container">
-        <h2 className="text-center">Give our users a great experience</h2>
-        <p className="text-center subtitle">Customers finding a high level of service always spread the positive experience with other potential customers</p>
-        
+        <h2 className="text-center">
+          Ofrecer a nuestros usuarios una gran experiencia
+        </h2>
+        <p className="text-center subtitle">
+          Los clientes que encuentran un alto nivel de servicio siempre
+          comparten la experiencia positiva con otros clientes potenciales
+        </p>
+
         <div className="testimonials-grid">
-          {testimonials.map(testimonial => (
+          {testimonials.map((testimonial) => (
             <div className="testimonial-card" key={testimonial.id}>
               <div className="testimonial-avatar">
                 <img src={testimonial.avatar} alt={testimonial.name} />
@@ -44,14 +49,18 @@ const TestimonialsSection = () => {
               <p>{testimonial.text}</p>
               <div className="rating">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <span key={i} className="star">★</span>
+                  <span key={i} className="star">
+                    ★
+                  </span>
                 ))}
-                <span className="rating-value">{testimonial.rating.toFixed(1)}</span>
+                <span className="rating-value">
+                  {testimonial.rating.toFixed(1)}
+                </span>
               </div>
             </div>
           ))}
         </div>
-        
+
         <div className="pagination">
           <span className="pagination-dot active"></span>
           <span className="pagination-dot"></span>

@@ -1,6 +1,6 @@
 // components/OrdersSection.js
-import '../styles/Order.css';
-import ordersImage from '../assets/resources/order-interface.png'; 
+import "../styles/Order.css";
+import ordersImage from "../assets/resources/order-interface.png";
 
 const OrdersSection = () => {
   return (
@@ -8,21 +8,25 @@ const OrdersSection = () => {
       <div className="container">
         <div className="orders-content">
           <div className="orders-text">
-            <h2>Get direct orders from your customers</h2>
-            <p>Allow your customers to place orders directly through chat, making it easier for them to get what they want, when they want. With a bit of guided help from a real human.</p>
-            
+            <h2>Recibe pedidos directos de tus clientes</h2>
+            <p>
+              Permite que tus clientes realicen pedidos directamente a través
+              del chat, facilitándoles obtener lo que desean, cuando lo desean.
+              Con un poco de ayuda guiada de un humano real.
+            </p>
+
             <div className="stats">
               <div className="stat-item">
                 <h3>9.3K+</h3>
-                <p>Monthly Active Users</p>
+                <p>Usuarios activos mensuales</p>
               </div>
               <div className="stat-item">
                 <h3>8M+</h3>
-                <p>Chats in Last 30 Days</p>
+                <p>Chats en los últimos 30 días</p>
               </div>
             </div>
           </div>
-          
+
           <div className="orders-image">
             <img src={ordersImage} alt="Orders interface" />
           </div>

@@ -1,6 +1,6 @@
 // components/VideoSection.js
-import '../styles/Video.css';
-import videoImage from '../assets/resources/video-section.png'; // Add this image to your assets
+import "../styles/Video.css";
+import videoImage from "../assets/resources/video-section.png"; // Add this image to your assets
 
 const VideoSection = () => {
   return (
@@ -8,16 +8,19 @@ const VideoSection = () => {
       <div className="container">
         <div className="video-content">
           <div className="video-text">
-            <h2>Craft a communication strategy using live video chat</h2>
-            <p>Video conferencing enhances productivity and creates collaborative, making it a modern tool for effective business communication.</p>
+            <h2>Estrategia de comunicación utilizando videochat en vivo</h2>
+            <p>
+              El uso de videoconferencias mejora la productividad y crea un
+              entorno colaborativo, convirtiéndolo en una herramienta moderna
+              para una comunicación empresarial efectiva.
+            </p>
           </div>
-          
+
           <div className="video-container">
             <div className="video-placeholder">
               <img src={videoImage} alt="Video chat" />
             </div>
-            <div className="chat-message">
-            </div>
+            <div className="chat-message"></div>
           </div>
         </div>
       </div>
