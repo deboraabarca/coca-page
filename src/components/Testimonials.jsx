@@ -1,9 +1,38 @@
+import { useEffect, useRef } from "react";
 import "../styles/Testimonials.css";
+import "../styles/Animations/TestimonialsAnimations.css"; // Importamos las animaciones
 import avatar1 from "../assets/avatars/avatar1.jpg";
 import avatar2 from "../assets/avatars/avatar2.jpg";
 import avatar3 from "../assets/avatars/avatar3.jpg";
 
 const TestimonialsSection = () => {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    const currentSectionRef = sectionRef.current;
+    if (currentSectionRef) {
+      observer.observe(currentSectionRef);
+    }
+
+    return () => {
+      if (currentSectionRef) {
+        observer.unobserve(currentSectionRef);
+      }
+    };
+  }, []);
+
   const testimonials = [
     {
       id: 1,
@@ -29,8 +58,8 @@ const TestimonialsSection = () => {
   ];
 
   return (
-    <section className="testimonials-section">
-      <div className="container">
+    <section ref={sectionRef} className="testimonials-section">
+      <div className="container fade-in">
         <h2 className="text-center">
           Ofrecer a nuestros usuarios una gran experiencia
         </h2>
@@ -41,7 +70,7 @@ const TestimonialsSection = () => {
 
         <div className="testimonials-grid">
           {testimonials.map((testimonial) => (
-            <div className="testimonial-card" key={testimonial.id}>
+            <div className="testimonial-card scale-up" key={testimonial.id}>
               <div className="testimonial-avatar">
                 <img src={testimonial.avatar} alt={testimonial.name} />
               </div>
@@ -61,7 +90,7 @@ const TestimonialsSection = () => {
           ))}
         </div>
 
-        <div className="pagination">
+        <div className="pagination fade-in">
           <span className="pagination-dot active"></span>
           <span className="pagination-dot"></span>
           <span className="pagination-dot"></span>
