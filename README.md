@@ -35,7 +35,7 @@ Coca es una plataforma de mensajería en tiempo real diseñada para mejorar la c
 🔗 Puedes ver el proyecto en: [https://coca-page.vercel.app/)  
 
 ## 📝 Autor  
-👤 **Tu Nombre**  
+👤 **Debora**  
 📧 Contacto: [abarcazavalad@gmail.com](mailto:tu-email@example.com)  
 🐙 GitHub: [@deboraabarca](https://github.com/tu-usuario)  
 
