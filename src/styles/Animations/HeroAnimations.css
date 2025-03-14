@@ -1,0 +1,187 @@
+
+.hero-text h1 {
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+}
+
+.hero-text h1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--primary-color);
+  animation: reveal 3.5s steps(50, end) forwards;
+  animation-delay: 0.1s;
+}
+
+@keyframes reveal {
+  0% { width: 100%; }
+  100% { width: 0; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+/* Animación para el párrafo */
+.hero-text p {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 4s;
+}
+
+/* Animación para los botones */
+.btn-started, .btn-learn {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+
+.btn-started {
+  animation: slideInFromBottom 0.8s ease forwards;
+  animation-delay: 4.2s;
+}
+
+.btn-learn {
+  animation: slideInFromBottom 0.8s ease forwards;
+  animation-delay: 4.5s;
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Efecto hover para los botones */
+.btn-started:hover, .btn-learn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-started:after, .btn-learn:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease;
+  z-index: -1;
+}
+
+.btn-started:hover:after, .btn-learn:hover:after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Animaciones para los iconos flotantes */
+.chat-icon-wrapper {
+  animation: floating 3s ease-in-out infinite;
+}
+
+.red-icon {
+  animation-delay: 0s;
+}
+
+.purple-icon {
+  animation-delay: 0.5s;
+}
+
+.email-icon {
+  animation-delay: 1s;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Animación para la nota flotante */
+.floating-note {
+  animation: fadeInRotate 2s ease forwards;
+  opacity: 0;
+  animation-delay: 5s;
+}
+
+.arrow-icon {
+  animation: bounceArrow 2s ease infinite;
+  animation-delay: 5.5s;
+  opacity: 0;
+}
+
+@keyframes fadeInRotate {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(7deg);
+  }
+}
+
+@keyframes bounceArrow {
+  0% {
+    opacity: 0;
+    transform: translateY(0) rotate(-30deg);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(10px) rotate(-30deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) rotate(-30deg);
+  }
+}
+
+/* Animación para el badge de software */
+.chat-software-badge {
+  animation: fadeIn 1s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Animación para la información de contacto */
+.contact-info {
+  animation: slideInFromBottom 1s ease forwards;
+  animation-delay: 5.5s;
+  opacity: 0;
+}
+
+/* Animaciones responsivas */
+@media (max-width: 768px) {
+  .hero-text h1::before {
+    display: none;
+  }
+  
+  .hero-text h1 {
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    animation-delay: 0.5s;
+  }
+}

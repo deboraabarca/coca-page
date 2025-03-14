@@ -1,5 +1,6 @@
 // components/HeroSection.js
 import "../styles/Hero.css";
+import "../styles/Animations/HeroAnimations.css";
 import phone from "../assets/icons/phone.png";
 import mouse from "../assets/icons/mouse.png";
 import {
