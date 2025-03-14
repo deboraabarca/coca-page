@@ -1,7 +1,7 @@
 # 🚀 Coca - Real-time Customer Support Chat
 ## 📷 Vista del proyecto
 
-![vista del proyecto](readme/readme-image.png)
+![vista del proyecto](readme-image.png)
 
 ## 🖊️ Descripción 
 
