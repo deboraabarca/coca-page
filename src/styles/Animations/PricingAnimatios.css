@@ -1,0 +1,56 @@
+/* Animaciones para la sección Pricing */
+.animate-section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animaciones para las tarjetas de precios */
+.pricing-card {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.is-visible .pricing-card {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Animación de aparición escalonada */
+.pricing-card:nth-child(1) {
+  transition-delay: 0.1s;
+}
+
+.pricing-card:nth-child(2) {
+  transition-delay: 0.3s;
+}
+
+.pricing-card:nth-child(3) {
+  transition-delay: 0.5s;
+}
+
+/* Animación para botones */
+.app-btn {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.is-visible .app-btn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.app-btn:nth-child(1) {
+  transition-delay: 0.6s;
+}
+
+.app-btn:nth-child(2) {
+  transition-delay: 0.8s;
+}

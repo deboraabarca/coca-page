@@ -1,12 +1,43 @@
-// components/PricingSection.js
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "../styles/Pricing.css";
+import "../styles/Animations/PricingAnimatios.css";
 import { FaGooglePlay, FaApple } from "react-icons/fa";
 
 const PricingSection = () => {
   const [billingCycle, setBillingCycle] = useState("monthly");
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const checkIfVisible = () => {
+      if (!sectionRef.current) return;
+
+      const rect = sectionRef.current.getBoundingClientRect();
+      const isInViewport =
+        rect.top <=
+          (window.innerHeight || document.documentElement.clientHeight) *
+            0.75 && rect.bottom >= 0;
+
+      if (isInViewport && !isVisible) {
+        setIsVisible(true);
+      }
+    };
+
+    checkIfVisible();
+    window.addEventListener("scroll", checkIfVisible);
+
+    return () => {
+      window.removeEventListener("scroll", checkIfVisible);
+    };
+  }, [isVisible]);
+
   return (
-    <section className="pricing-section">
+    <section
+      className={`pricing-section animate-section ${
+        isVisible ? "is-visible" : ""
+      }`}
+      ref={sectionRef}
+    >
       <div className="container">
         <h2 className="pricing-title">Pricing Plans</h2>
         <p className="pricing-description">
@@ -123,7 +154,7 @@ const PricingSection = () => {
             <a href="#app-store" className="app-btn">
               <FaApple className="app-icon" />
               <span>
-                DESCARGALO EN LA
+                DESCÁRGALO EN LA
                 <br />
                 App Store
               </span>
